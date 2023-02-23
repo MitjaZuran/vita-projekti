@@ -40,9 +40,10 @@ header{
 	padding: 20px 0;
 	background: transparent;
 	z-index: 1;
+}
+.headerHome{
 	transition: all 0.5s;
 }
-  
 header.header-scrolled {
 	background: rgba(55, 64, 85, 0.9);
 	padding: 15px 0;
@@ -100,6 +101,7 @@ header .logo a:hover {
 main{
 	flex: auto;
 	min-height: 500px;
+	padding-top: 100px;
 }
 
 footer{

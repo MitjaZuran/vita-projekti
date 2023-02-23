@@ -19,7 +19,7 @@
  /**
    * Toggle .header-scrolled class to #header when page is scrolled
    */
-  let selectHeader = select('header')
+  let selectHeader = select('.headerHome')
   if (selectHeader) {
     const headerScrolled = () => {
       if (window.scrollY > 100) {

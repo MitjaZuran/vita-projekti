@@ -76,10 +76,14 @@ header .logo a:hover {
 }
 
 #hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
 	height: 80vh;
 	background: url("../images/bg.jpg") top center;
 	background-size: cover;
+	background-attachment: fixed;
 	position: relative;
   }
   
@@ -92,12 +96,23 @@ header .logo a:hover {
 	left: 0;
 	right: 0;
   }
-  
-  #hero .container {
+  #hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+#hero h2 {
+    color: #eee;
+    margin: 15px 0 0 0;
+    font-size: 22px;
+}
+   .heroSectionWrap{
+	position: relative;
 	text-align: center;
-	padding-top: 50px;
+    padding-top: 50px;
   }
-
 main{
 	flex: auto;
 	min-height: 500px;

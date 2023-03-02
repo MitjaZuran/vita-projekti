@@ -116,8 +116,49 @@ header .logo a:hover {
 main{
 	flex: auto;
 	min-height: 500px;
-	padding-top: 100px;
+	padding-top: 0px;
 }
+
+.mainReferencesWrap{
+	position: relative;
+	height: 90px;
+	background: rgba(55, 64, 85, 0.1);
+	overflow: hidden;
+}
+.mainReferences{
+	position: absolute;
+	top: 20px;
+	padding: 0 20px;
+	animation: linear infinite alternate;
+	-webkit-animation-name: run;
+	-webkit-animation-duration: 5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.mainReferences:hover{
+	animation-play-state: paused;
+}
+@-webkit-keyframes run {
+	0% {
+		left: 0;		
+		transform: translateX(0);
+	}
+	100% {
+		left: 100%;
+		transform: translateX(-100%);
+	}
+}
+
+.mainReferencesLogo{}
+.mainReferencesLogo img{ max-width: 100px; max-height: 50px; filter: grayscale(100%);
+    opacity: 0.6;}
+.mainReferencesLogo:hover img{ filter: unset; opacity: 1;}
+
+ 
+
+.mainNadzor{padding: 50px;}
 
 footer{
 	padding: 20px 0;
@@ -151,3 +192,38 @@ footer .footerLogo h1 {
 
 }
 
+
+ /* Extra small devices (phones, 600px and down) */
+ @media only screen and (max-width: 600px) {
+	h1{
+		font-size: 25px;
+	}
+	.navigation{ display: none;}
+	header .logo{padding-left: 20px;}
+
+	#hero h1 {
+		font-size: 35px;
+	}
+	#hero h2 {
+		font-size: 20px;
+	}
+	.mainReferences{
+		-webkit-animation-duration: 10s;
+	}
+	.mainNadzor{padding: 20px;}
+
+	footer{padding: 20px;}
+	.footerWrap{flex-direction: column;}
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {}
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {}
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {}
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {...} 

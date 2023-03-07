@@ -316,8 +316,13 @@ footer .footerLogo h1 {
 	}
 	.mainNadzor{padding: 20px;}
 
+	.reference{padding: 100px 20px;}
+
+.podjetje{padding: 100px 20px;}
+
 	footer{padding: 20px;}
 	.footerWrap{flex-direction: column;}
+	
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */

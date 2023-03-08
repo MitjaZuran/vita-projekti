@@ -73,7 +73,9 @@ h1 {
 .yellow {
 	color: #ffce3a;
 }
-
+.bold{
+	font-weight: bold;
+}
 .wrap {
 	max-width: 1024px;
 	margin: 0 auto;
@@ -352,7 +354,15 @@ main {
 
 .podjetje {
 	padding: 100px 0;
+	line-height: 1.5;
 }
+
+.podjetjeInfo{
+	display: inline-block;
+	margin: 50px auto 0;
+	font-weight: bold;
+}
+
 
 footer {
 	padding: 20px 0;
